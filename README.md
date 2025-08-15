@@ -16,7 +16,7 @@ Owner: **Sora & Co.**
 3. The site is fully static — cart, testimonials, and feedback are stored in the browser's localStorage.
 
 ## Notes
-- Replace images in `assets/` with your real photos. Filenames used in HTML/JS are `hero.jpg`, `placeholder1.jpg`, `placeholder2.jpg`, `placeholder3.jpg`, and product images `product1.jpg` ... `product4.jpg`.
+- Replace images in `assets/` with your real photos. Filenames used in HTML/JS are `WillowMere(1)`, `placeholder1.jpg`, `placeholder2.jpg`, `placeholder3.jpg`, and product images `product1.jpg` ... `product4.jpg`.
 - The checkout button simulates checkout and clears the cart. Integrate a payment gateway for real transactions.
 
 Enjoy! — generated for Sora & Co.
