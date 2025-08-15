@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Willowmere — Where forests whisper</title>
+  <meta name="description" content="Willowmere — a woodland-inspired shop & cafe with whimsical cottagecore treasures." />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="leaf-wrap" aria-hidden="true">
+    <div class="leaf l1">🍃</div>
+    <div class="leaf l2">🍃</div>
+    <div class="leaf l3">🍃</div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Willowmere</h1>
+      <p class="tag">Where forests whisper and dreams take root</p>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#products">Shop</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#cafe">Cafe</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cart-btn" id="open-cart" aria-label="Open cart">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h2 class="hero-title">Willowmere</h2>
+          <p class="hero-sub">Where forests whisper and dreams take root</p>
+          <a class="btn primary" href="#products">Explore the Shop</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about container">
+      <h3>About Willowmere</h3>
+      <p>Willowmere is a quaint woodland-inspired shop, offering handmade accessories, cottagecore décor, and whimsical treasures. Nestled like a hidden cottage, our space blends soft moss, warm cream light, and small delights that feel like a page from a fairy tale.</p>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="products container">
+      <h3>Featured Products</h3>
+      <div class="grid" id="product-grid">
+        <!-- Product cards inserted by JS -->
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery container">
+      <h3>Gallery</h3>
+      <div class="carousel" id="carousel">
+        <div class="slides" id="slides">
+          <div class="slide"> <img src="assets/placeholder1.jpg" alt="Interior shot 1"> </div>
+          <div class="slide"> <img src="assets/placeholder2.jpg" alt="Interior shot 2"> </div>
+          <div class="slide"> <img src="assets/placeholder3.jpg" alt="Product shot"> </div>
+        </div>
+        <button class="carousel-prev" id="prev">‹</button>
+        <button class="carousel-next" id="next">›</button>
+      </div>
+    </section>
+
+    <!-- Cafe -->
+    <section id="cafe" class="cafe container">
+      <h3>Willowmere Café Corner</h3>
+      <p>A hidden forest café inside the shop — enjoy Moonlight Lattes, herbal teas, and honeyed treats while leaf-sounds drift by.</p>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h4>Moonlight Latte</h4><p>Lavender latte with a dusting of edible shimmer.</p><span class="price">Rp35.000</span>
+        </div>
+        <div class="menu-card">
+          <h4>Forest Berry Tea</h4><p>Hibiscus, blueberry & mint infusion.</p><span class="price">Rp30.000</span>
+        </div>
+        <div class="menu-card">
+          <h4>Honey Moss Cake</h4><p>Matcha sponge with honey cream.</p><span class="price">Rp45.000</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials container">
+      <h3>Testimonials</h3>
+      <div class="notes" id="notes">
+        <!-- testimonials placed here -->
+      </div>
+
+      <div class="testimonial-form">
+        <h4>Leave a note</h4>
+        <input id="name" placeholder="Your name" />
+        <textarea id="message" placeholder="What did you like?"></textarea>
+        <button id="submit-testimonial" class="btn">Submit</button>
+      </div>
+    </section>
+
+    <!-- Contact & Feedback -->
+    <section id="contact" class="contact container">
+      <h3>Contact & Visit</h3>
+      <p><strong>Address:</strong> Willowmere Lane 7, Sora & Co. Village</p>
+      <p><strong>Email:</strong> hello@willowmere.example</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/willowmere" target="_blank">@willowmere</a></p>
+
+      <h4>Kritik & Saran</h4>
+      <form id="feedback-form">
+        <input type="text" id="fb-name" placeholder="Your name (optional)" />
+        <textarea id="fb-message" placeholder="Kritik atau saran..."></textarea>
+        <button class="btn" type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Willowmere — Sora & Co.</p>
+      <div class="animals">🦊🐸🦋</div>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cart-modal" aria-hidden="true">
+    <div class="cart-content">
+      <button class="close-cart" id="close-cart">✕</button>
+      <h4>Your Cart</h4>
+      <ul id="cart-items"></ul>
+      <div class="cart-total">Total: <span id="cart-total">Rp0</span></div>
+      <button id="checkout" class="btn primary">Checkout</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
