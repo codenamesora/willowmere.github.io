@@ -36,6 +36,17 @@ body{
 .hero-content{color:var(--cream);text-align:center;padding:2rem}
 .hero-title{font-family:'Playfair Display', serif;font-size:4rem;margin:0;color:var(--cream);text-shadow:0 6px 20px rgba(0,0,0,0.35)}
 .hero-sub{font-family:'Quicksand',sans-serif;margin-top:0.8rem;font-size:1.1rem;color:var(--cream)}
+.hero {
+  background-image: url("images/WillowMere\ \(1\).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 .btn{display:inline-block;padding:.65rem 1rem;border-radius:10px;border:0;cursor:pointer;background:transparent}
 .btn.primary{background:var(--moss);color:var(--cream);box-shadow:var(--card-shadow);transition:transform .18s ease}
